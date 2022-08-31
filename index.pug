@@ -1,0 +1,14 @@
+extend ./componentes/plantilla.pug
+block contenido
+    main.homepage
+        section.homepage__menu
+            h2 Menú
+            nav
+                ul.column-menu
+                    each enlace in enlaces 
+                        li: a(href="#")= enlace
+        section.homepage__content
+            h2= titulo
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur dolores, odit libero reiciendis ipsum eius ex eligendi expedita ab neque, architecto nobis rerum molestiae. Atque sunt error voluptatibus ex illum molestiae, architecto nisi. Placeat tenetur fuga consequuntur? Facere voluptatibus fuga maiores accusantium repellendus at ad magnam eum iste quam.
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel tenetur dolores, odit libero reiciendis ipsum eius ex eligendi expedita ab neque, architecto nobis rerum molestiae. Atque sunt error voluptatibus ex illum molestiae, architecto nisi. Placeat tenetur fuga consequuntur? Facere voluptatibus fuga maiores accusantium repellendus at ad magnam eum iste quam.
+            a.boton(href="landing.html") Leer más

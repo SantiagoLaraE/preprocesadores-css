@@ -1,0 +1,19 @@
+{
+  "name": "preprocesadores-css",
+  "version": "1.0.0",
+  "description": "Curso Preprocesadores CSS PLatzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoLaraE/preprocesadores-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiagoLaraE/preprocesadores-css/issues"
+  },
+  "homepage": "https://github.com/SantiagoLaraE/preprocesadores-css#readme"
+}
