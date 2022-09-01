@@ -1,0 +1,24 @@
+.contenedor--cajas{
+    width: 1400px;
+    margin: 0 auto 54px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja{
+    max-width: 430px;
+    .sombra-caja;
+    &__contenido{
+        padding: 24px;
+        background-color: if((@darkMode), @color-secundario, @color-claro);
+    }
+    span{
+        color:if((@darkMode), @color-claro, @color-secundario) ;
+        .fuente2;
+    }
+    a{
+        text-decoration: none;
+        color: if((@darkMode), @color-claro, @color-variacion);
+        .fuente2;
+    }
+}

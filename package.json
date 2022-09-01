@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SantiagoLaraE/preprocesadores-css/issues"
   },
-  "homepage": "https://github.com/SantiagoLaraE/preprocesadores-css#readme"
+  "homepage": "https://github.com/SantiagoLaraE/preprocesadores-css#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
 }
