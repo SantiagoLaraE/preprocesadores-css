@@ -1,0 +1,71 @@
+@use"./globales"as *;
+.perfil{
+    width: 50%;
+    padding-top: 50px;
+    text-align: center;
+    background-color:$color-secundario;
+    color: $color-claro;
+    &__avatar{
+        display: block;
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+    &__nombre{
+        font-size: 20px;
+        @include headers($Fuente2);
+    }
+    &__titulo{
+        display: block;
+        font-weight: 700;
+        font-size: 12px;
+        color: get-opacity($color-claro, .50);
+        @include headers($Fuente2);
+    }
+    &__boton{
+        display: inline-block;
+        padding: 12px 16px;
+        margin: 8px auto 32px;
+        text-decoration: none;
+        @include headers($Fuente2);
+        border: 1px solid $color-claro;
+        color: $color-claro;
+        border-radius: 32px;
+        transition: all .2s ease-in-out;
+        &:hover{
+            background-color: $color-claro;
+            color: $color-secundario;
+        }
+    }
+}
+
+.perfil.theme2{
+    background-color:$light-color;
+    color: $color-claro;
+    .perfil__nombre{
+        color: $color-secundario;
+    }
+    .perfil__titulo{
+        color: get-opacity($color-variacion, .80);
+    }
+    .perfil__boton{
+        border: 1px solid $color-primario;
+        background-color: $color-primario;
+        color: $color-claro;
+        &:hover{
+            color: $color-primario;
+            border: 1px solid $color-primario;
+            background-color: $light-color;
+        }
+    }
+}
+
+.perfil__minibio{
+    margin: 0 auto;
+    padding-top: 20px;
+    h2{
+        @extend .perfil__nombre;
+    }
+    h3{
+        @extend .perfil__titulo;
+    }
+}
